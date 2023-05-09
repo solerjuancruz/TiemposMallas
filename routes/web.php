@@ -81,10 +81,10 @@ Route::get('/', function () {
     Route::get('/searchsuperpersonalindex','App\Http\Controllers\PersonalSuperController@searchsuperpersonalindex');
 
     Route::get('hora-list-excel', 'App\Http\Controllers\PersonalSuperController@exportExcel')->name('superpersonal.excel');
+   
     // Rutas Mallas
-    //ruta main mallas
     Route::resource('mallas', App\Http\Controllers\MallasController::class);
-    // ruta de create mallas
+  
 
-    // ruta de edit mallas
+  
 });

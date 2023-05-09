@@ -14,7 +14,7 @@
                             <div class="card-body d-flex">
                                 <div class="col-12 text-right ">
                                     <h3 class="float-left">Tabla de datos </h3>
-                                    <a href="{{ route('createmallas.create') }} " class="btn btn-md btn-info ">
+                                    <a href="{{ route('mallas.create') }} " class="btn btn-md btn-info ">
                                         <i class="material-icons">add</i>Crear</a>
                                 </div>
                             </div>
