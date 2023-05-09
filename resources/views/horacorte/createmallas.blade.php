@@ -8,17 +8,17 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header card-header-info">
-                                <h2 class="card-title text-center "><b>Diligencia los siguientes datos</b> </h2>
+                                <h2 class="card-title pl- "><b>Diligencia los siguientes datos</b> </h2>
                                 <h4 class="card-category text-white"><b>Creación de mallas</b></h4>
                             </div>
 
                             <div class=" container-fluid  m-1 p-1">
                                 <form action="#" method="GET" class="form-control-sm p-1 m-1">
-                                   <!-- selección de selects-->
-                                   <script>
-                                  
+                                    <!-- selección de selects-->
+                                    <script>
+
                                     </script>
-                                    <div class="form-row d-flex justify-content-around">
+                                    <div class="form-row d-flex justify-content-around mt-3">
                                         <div class="form-group col-md-5 pt-0 mt-0 ">
                                             <label class="text-info" style="font-size:1.3em;" for="Nombreasesor">Nombre
                                                 Asesor</label>
@@ -36,7 +36,7 @@
                                             <input type="week" class="form-control " id="semanaasig" required>
                                         </div>
                                     </div>
-                                    <div class="form-row d-flex justify-content-around mt-1">
+                                    <div class="form-row d-flex justify-content-around mt-2">
 
                                         <div class="form-group col-md-3">
                                             <label class="text-info" style="font-size:1.3em;"
@@ -54,21 +54,22 @@
                                             <input type="text" class="form-control mt-3" id="Encargado" required>
                                         </div>
                                     </div>
-                                    <div class="form-row d-flex justify-content-around mt-1">
+                                    <div class="form-row d-flex justify-content-around mt-2">
 
                                         <div class="form-group col-md-2">
-                                            <label class="text-info" style="font-size:1.3em;"
-                                                for="H-trab">H-trab</label>
-                                            <input type="text" class="form-control mt-3" id="H-trab" value="07:00:00">
+                                            <label class="text-info" style="font-size:1.3em;" for="H-trab">Horas totales
+                                                trabajadas</label>
+                                            <input type="text" class="form-control mt-3" id="H-trab" disabled>
                                         </div>
                                         <div class="form-group col-md-2">
-                                            <label class="text-info" style="font-size:1.3em;" for="H-ini">H-ini</label>
+                                            <label class="text-info" style="font-size:1.3em;"
+                                                for="H-ini">Hora-inicio</label>
                                             <input type="time" class="form-control mt-3" id="H-ini" value="07:00:00"
                                                 required>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label class="text-info" style="font-size:1.3em;"
-                                                for="H-fin">H-fin</label></label>
+                                                for="H-fin">Hora-fin</label></label>
                                             <input type="time" class="form-control mt-3" id="H-fin" value="07:00:00"
                                                 required>
                                         </div>
@@ -82,13 +83,13 @@
 
                                         <div class="form-group col-md-2">
                                             <label class="text-info" style="font-size:1.3em;"
-                                                for="H-alm-ini">H-ini-alm</label>
+                                                for="H-alm-ini">H-inicio-alm</label>
                                             <input type="time" class="form-control mt-3" id="H-alm-ini" value="07:00:00"
                                                 required>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label class="text-info" style="font-size:1.3em;"
-                                                for="H-alm-fin">H-alm-fin</label>
+                                                for="H-alm-fin">H-fin-alm</label>
                                             <input type="time" class="form-control mt-3" id="H-alm-fin" value="07:00:00"
                                                 required>
                                         </div>
@@ -100,9 +101,8 @@
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label class="text-info" style="font-size:1.3em;"
-                                                for="H-fin">H-fin</label></label>
-                                            <input type="time" class="form-control mt-3" id="H-fin" value="07:00:00"
-                                                required>
+                                                for="Dia-desc">Dia-desc</label></label>
+                                            <input type="date" class="form-control mt-3" id="Dia-desc" required>
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-end m-4">

@@ -54,9 +54,9 @@ class MallasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view('horacorte.editmallas');
     }
 
     /**
@@ -77,8 +77,8 @@ class MallasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy()
     {
-        //
+       
     }
 }
