@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Malla;
+use App\Models\User;
 use Illuminate\Http\Request;
-
+use Carbon\Carbon;
 class MallasController extends Controller
+
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,8 @@ class MallasController extends Controller
      */
     public function index()
     {
-     return view('horacorte.mallas');
+        $datos = Malla::all();
+        return view('horacorte.mallas',compact('datos'));
     }
 
     /**
@@ -23,7 +26,8 @@ class MallasController extends Controller
      */
     public function create()
     {
-      return view('horacorte.createmallas');
+        $usuarios = User::all();
+        return view('horacorte.createmallas', compact('usuarios'));
     }
 
     /**
@@ -34,7 +38,45 @@ class MallasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+
+        $inicio = Carbon::parse($request->input('horainicio'));
+        $salida = Carbon::parse($request->input('horafinal'));
+        $almuerzoinicio = Carbon::parse($request->input('almuerzoinicio'));
+        $almuerzofinal = Carbon::parse($request->input('almuerzofinal'));
+        
+        $almuerzo = $almuerzofinal->diffInHours($almuerzoinicio);
+        // Verificar si la hora de inicio es mayor a la hora final
+        if ($inicio->greaterThan($salida)) {
+            // Escenario 2: Hora de inicio mayor a la hora final (misma día)
+            echo 'La hora de inicio no puede ser mayor a la hora de salida';
+        } else {
+            // Escenario 1: Hora de inicio menor o igual a la hora final
+            $totalhoras = $salida->diffInHours($inicio);
+            
+            $totalhoras -= $almuerzo;
+        
+
+  
+        $mallas = new Malla();
+        $mallas ->users_id= $request->get('users_id');
+        $mallas ->semana= $request->get('semana');
+        $mallas ->campaña=$request->get('campaña');
+        $mallas ->foco=$request->get('foco');
+        $mallas ->encargado=$request->get('encargado');
+        $mallas ->horainicio= $request->get('horainicio');
+        $mallas ->horafinal= $request->get('horafinal');
+        $mallas ->descanso1= $request->get('descanso1');
+        $mallas ->almuerzoinicio= $request->get('almuerzoinicio');
+        $mallas ->almuerzofinal= $request->get('almuerzofinal');
+        $mallas ->descanso2= $request->get('descanso2');
+        $mallas ->horastotal = $totalhoras;
+        $mallas ->diadescanso= $request->get('diadescanso');
+
+        $mallas ->save();
+
+        return redirect()->action([MallasController::class, 'index']);
+        }
     }
 
     /**
