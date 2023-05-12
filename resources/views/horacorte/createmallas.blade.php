@@ -13,7 +13,7 @@
                             </div>
 
                             <div class=" container-fluid  m-1 p-1">
-                                <form action="{{ route('mallas.store') }}" method="POST" class="form-control-sm p-1 m-1">
+                                <!--<form action="{{ route('mallas.store') }}" method="POST" class="form-control-sm p-1 m-1">
                                 @csrf    
 
                                     <div class="form-row d-flex justify-content-around mt-3">
@@ -106,7 +106,196 @@
 
                                         <button type="submit" class="btn btn-info">Guardar</button>
                                     </div>
-                                </form>
+                                </form>-->
+
+
+                                <div class="container-fluid">
+                                    <form action="" method="" class="" id="">
+
+                                        <div class="form-row d-flex justify-content-around mt-3">
+                                            <div class="form-group col-md-5 pt-0 mt-0 ">
+                                                <label class="text-info" style="font-size:1.3em;" for="users_id">Nombre
+                                                    Asesor</label>
+                                                <select name="users_id" id="users_id" class="form-control"
+                                                    aria-label="Default select example" required>
+                                                    @foreach ($usuarios as $usuario)
+                                                    <option value="{{ $usuario['id']}}">{{ $usuario['name']}}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-5 p-4 ">
+                                                <label class="text-info" style="font-size:1.3em;"
+                                                    for="semana">Semana-Asignada</label>
+                                                <input type="week" class="form-control" name="semana" id="semana"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row d-flex justify-content-around mt-2">
+
+                                            <div class="form-group col-md-3">
+                                                <label class="text-info" style="font-size:1.3em;"
+                                                    for="campaña">Campaña</label>
+                                                <input type="text" class="form-control mt-3" id="campaña" name="campaña"
+                                                    required>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="text-info" style="font-size:1.3em;"
+                                                    for="foco">Foco</label></label>
+                                                <input type="text" class="form-control mt-3" name="foco" id="foco"
+                                                    required>
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label class="text-info" style="font-size:1.3em;"
+                                                    for="encargado">Encargado</label>
+                                                <input type="text" class="form-control mt-3" name="encargado"
+                                                    id="encargado" required>
+                                            </div>
+                                        </div>
+
+
+
+                                        <table class="table table-hover p-4 mt-4 w-100 ">
+                                            <thead style="background:#00CED1;  border-radius:30px;"
+                                                class="fs-1 fw-bold text-light text-center">
+                                                <tr class="">
+                                                    <th scope="col"> <img src="" alt=""></th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr-trab
+                                                    </th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr Ini
+                                                    </th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">H-fin
+                                                    </th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 1
+                                                    </th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                        H-ini-alm</th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                        H-fin-alm</th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 2
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Lunes</th>
+                                                    <td><input class="form-control " type="text" name="" id="" ></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Martes</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Miercoles</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Jueves</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Viernes</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Sabado</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Domingo</th>
+                                                    <td><input class="form-control" type="text" name="" id="" required
+                                                            disabled></td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
+                                                    </td>
+                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="d-flex justify-content-end m-4">
+
+                                            <button type="submit" class="btn btn-info">Guardar</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
