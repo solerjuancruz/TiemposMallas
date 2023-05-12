@@ -107,11 +107,8 @@
                                         <button type="submit" class="btn btn-info">Guardar</button>
                                     </div>
                                 </form>-->
-
-
-                                <div class="container-fluid">
+                                <div class="m-4 p-4">
                                     <form action="" method="" class="" id="">
-
                                         <div class="form-row d-flex justify-content-around mt-3">
                                             <div class="form-group col-md-5 pt-0 mt-0 ">
                                                 <label class="text-info" style="font-size:1.3em;" for="users_id">Nombre
@@ -151,15 +148,13 @@
                                                     id="encargado" required>
                                             </div>
                                         </div>
-
-
-
-                                        <table class="table table-hover p-4 mt-4 w-100 ">
-                                            <thead style="background:#00CED1;  border-radius:30px;"
-                                                class="fs-1 fw-bold text-light text-center">
-                                                <tr class="">
-                                                    <th scope="col"> <img src="" alt=""></th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr-trab
+                                        <div class=" mt-4 pt-4 ">
+                                        <table class="table table-hover" style="border-collapse: collapse;">
+                                            <thead style="background:#00CED1;"
+                                                class="fw-bold text-light text-center">
+                                                <tr class=" m-0 p-0 d-grid justify-content-center">
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Mallas/Gestión</th>
+                                                    <th style="font-size:1.5em; font-weight: bold;" scope="col">Hr-trab
                                                     </th>
                                                     <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr Ini
                                                     </th>
@@ -167,19 +162,16 @@
                                                     </th>
                                                     <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 1
                                                     </th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">
-                                                        H-ini-alm</th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">
-                                                        H-fin-alm</th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 2
-                                                    </th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">H-ini-alm</th>
+                                                     <th style="font-size:1.5em; font-weight: bold; " scope="col">H-fin-alm</th>
+                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 2</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Lunes</th>
-                                                    <td><input class="form-control " type="text" name="" id="" ></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Lunes</th>
+                                                    <td><input class="form-control" type="text" name="" id="" disabled></td>
+                                                    <td><input style="border-radius:30px; border:3px solid #008080; box-shadow:1px 1px 10px ; padding:3px 3px 3px 7px" type="time" name="" id=""></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id=""></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id=""></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id=""></td>
@@ -187,7 +179,7 @@
                                                     <td><input style="border-radius:15px;" type="time" name="" id=""></td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Martes</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Martes</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -204,7 +196,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Miercoles</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Miercoles</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -221,7 +213,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Jueves</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Jueves</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -238,7 +230,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Viernes</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Viernes</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -255,7 +247,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Sabado</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Sabado</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -272,7 +264,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-info ts-2" style="font-size:1.5em ;">Domingo</th>
+                                                    <th class="text-info text-center" style="font-size:1.5em ;">Domingo</th>
                                                     <td><input class="form-control" type="text" name="" id="" required
                                                             disabled></td>
                                                     <td><input style="border-radius:30px;" type="time" name="" id="">
@@ -288,12 +280,12 @@
                                                     <td><input style="border-radius:15px;" type="time" name="" id="">
                                                     </td>
                                                 </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="d-flex justify-content-end m-4">
-
-                                            <button type="submit" class="btn btn-info">Guardar</button>
+                                                </tbody>
+                                               </table>
                                         </div>
+                                                         <div class="d-flex justify-content-end m-4">
+                                                       <button type="submit" class="btn btn-info">Guardar</button>
+                                                        </div>
                                     </form>
                                 </div>
                             </div>
