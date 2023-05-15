@@ -149,143 +149,225 @@
                                             </div>
                                         </div>
                                         <div class=" mt-4 pt-4 ">
-                                        <table class="table table-hover" style="border-collapse: collapse;">
-                                            <thead style="background:#00CED1;"
-                                                class="fw-bold text-light text-center">
-                                                <tr class=" m-0 p-0 d-grid justify-content-center">
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Mallas/Gestión</th>
-                                                    <th style="font-size:1.5em; font-weight: bold;" scope="col">Hr-trab
-                                                    </th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr Ini
-                                                    </th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">H-fin
-                                                    </th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 1
-                                                    </th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">H-ini-alm</th>
-                                                     <th style="font-size:1.5em; font-weight: bold; " scope="col">H-fin-alm</th>
-                                                    <th style="font-size:1.5em; font-weight: bold; " scope="col">Desc 2</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Lunes</th>
-                                                    <td><input class="form-control" type="text" name="" id="" disabled></td>
-                                                    <td><input style="border-radius:30px; border:3px solid #008080; box-shadow:1px 1px 10px ; padding:3px 3px 3px 7px" type="time" name="" id=""></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id=""></td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id=""></td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Martes</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Miercoles</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Jueves</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Viernes</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Sabado</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="text-info text-center" style="font-size:1.5em ;">Domingo</th>
-                                                    <td><input class="form-control" type="text" name="" id="" required
-                                                            disabled></td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:30px;" type="time" name="" id="">
-                                                    </td>
-                                                    <td><input style="border-radius:15px;" type="time" name="" id="">
-                                                    </td>
-                                                </tr>
+                                            <table class="table table-hover w-auto" style="border-collapse: collapse;">
+                                                <thead style="background:#00CED1;"
+                                                    class="fw-bold text-light text-center">
+                                                    <tr class=" m-0 p-0 d-grid justify-content-center">
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            Mallas/Gestión</th>
+                                                        <th style="font-size:1.5em; font-weight: bold;" scope="col">
+                                                            Hr-trab
+                                                        </th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">Hr
+                                                            Ini
+                                                        </th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            H-fin
+                                                        </th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            Desc 1
+                                                        </th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            H-ini-alm</th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            H-fin-alm</th>
+                                                        <th style="font-size:1.5em; font-weight: bold; " scope="col">
+                                                            Desc 2</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Lunes</th>
+                                                        <td><input
+                                                                class="form-control text-info text-center font-weight-bold w-50"
+                                                                style="font-size: 1.5rem;" type="text" name=""
+                                                                id="htrab" disabled></td>
+                                                        <td><input
+                                                                style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;"
+                                                                type="time" name="" id="horainicio" onclick="calcular()"
+                                                                value="07:00:00"></td>
+                                                        <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;" type="time" name=""
+                                                                id="horafin" onclick="calcular()" value="17:00:00"></td>
+                                                        <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;" type="time" name=""
+                                                                id="desc1" value="10:00:00"></td>
+                                                        <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;" type="time" name=""
+                                                                id="alminicio" value="13:00:00"></td>
+                                                        <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;" type="time" name=""
+                                                                id="almfin" value="14:00:00"></td>
+                                                        <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
+                                                                 font-weight:bold; text-align:end; color:teal;";" type="time" name=""
+                                                                id="desc2" value="16:00:00"></td>
+                                                    </tr>
+                                                    <script>
+                                                    function calcular() {
+                                                        let a = parseFloat(document.getElementById("horainicio")
+                                                            .value) || 0;
+                                                        let b = parseFloat(document.getElementById("horafin").value) ||
+                                                            0;
+                                                        let c = parseFloat(document.getElementById("alminicio")
+                                                            .value) || 0;
+                                                        let d = parseFloat(document.getElementById("almfin").value) ||
+                                                        0;
+                                                        let total = document.getElementById("htrab").value = (b - a) - (
+                                                            d - c);
+                                                    }
+                                                    </script>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Martes</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Miercoles</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Jueves</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Viernes</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Sabado</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-info text-center" style="font-size:1.5em ;">
+                                                            Domingo</th>
+                                                        <td><input class="form-control" type="text" name="" id=""
+                                                                required disabled></td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:30px;" type="time" name=""
+                                                                id="">
+                                                        </td>
+                                                        <td><input style="border-radius:15px;" type="time" name="" id=""
+                                                                value="00:00:00">
+                                                        </td>
+                                                    </tr>
                                                 </tbody>
-                                               </table>
+                                            </table>
                                         </div>
-                                                         <div class="d-flex justify-content-end m-4">
-                                                       <button type="submit" class="btn btn-info">Guardar</button>
-                                                        </div>
+                                        <div class="d-flex justify-content-end m-4">
+                                            <button type="submit" class="btn btn-info">Guardar</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>

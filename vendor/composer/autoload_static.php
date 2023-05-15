@@ -351,8 +351,8 @@ class ComposerStaticInit7b13417ea7c9b713343978e9f2612fdc
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -632,6 +632,7 @@ class ComposerStaticInit7b13417ea7c9b713343978e9f2612fdc
         'App\\Http\\Controllers\\HistorialController' => __DIR__ . '/../..' . '/app/Http/Controllers/HistorialController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\LineaNuevaController' => __DIR__ . '/../..' . '/app/Http/Controllers/LineaNuevaController.php',
+        'App\\Http\\Controllers\\MallasController' => __DIR__ . '/../..' . '/app/Http/Controllers/MallasController.php',
         'App\\Http\\Controllers\\NoticiasController' => __DIR__ . '/../..' . '/app/Http/Controllers/NoticiasController.php',
         'App\\Http\\Controllers\\PerfilController' => __DIR__ . '/../..' . '/app/Http/Controllers/PerfilController.php',
         'App\\Http\\Controllers\\PersonalActivoController' => __DIR__ . '/../..' . '/app/Http/Controllers/PersonalActivoController.php',
@@ -671,6 +672,7 @@ class ComposerStaticInit7b13417ea7c9b713343978e9f2612fdc
         'App\\Models\\CicloReunionOut' => __DIR__ . '/../..' . '/app/Models/CicloReunionOut.php',
         'App\\Models\\CicloSalida' => __DIR__ . '/../..' . '/app/Models/CicloSalida.php',
         'App\\Models\\Convenio' => __DIR__ . '/../..' . '/app/Models/Convenio.php',
+        'App\\Models\\Malla' => __DIR__ . '/../..' . '/app/Models/Malla.php',
         'App\\Models\\Noticias' => __DIR__ . '/../..' . '/app/Models/Noticias.php',
         'App\\Models\\PersonalActivo' => __DIR__ . '/../..' . '/app/Models/PersonalActivo.php',
         'App\\Models\\Registro' => __DIR__ . '/../..' . '/app/Models/Registro.php',
