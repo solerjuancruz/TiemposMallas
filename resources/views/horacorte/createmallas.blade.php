@@ -14,7 +14,7 @@
                               <!-- formulario nuevo -->
                             <div class=" container-fluid  m-1 p-1">
                                 <div class="m-4 p-4">
-                                    <form action="{{route('mallas.store')}} method="post" class="" id="">
+                                    <form action="{{route('mallas.store')}}" method="post" class="" id="">
                                         @csrf
                                         <div class="form-row d-flex justify-content-around mt-3">
                                             <div class="form-group col-sm-3 pt-0 mt-0 ">
@@ -130,46 +130,39 @@
                                                                  font-weight:bold; text-align:end; color:teal;"
                                                                 type="time" name="" id="desc2" value="16:00:00"></td>
                                                     </tr>
-                                                    <script>
-                                                    function calcular(id1, id2, id3, id4, id5) {
-
-                                                        
-                                                        let a = parseFloat(document.getElementById(id1).value) || 0;
-                                                        let b = parseFloat(document.getElementById(id2).value) || 0;
-                                                        let c = parseFloat(document.getElementById(id3).value) || 0;
-                                                        let d= parseFloat(document.getElementById(id4).value) || 0;
-                                                        let total = document.getElementById(id5).value = (b - a) - (
-                                                            d - c) + "-horas";
-                                                    }
-                                                    </script>
                                                     <tr>
                                                         <th class="text-info text-center" style="font-size:1.5em ;">
                                                             Martes</th>
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
                                                                 style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                id="htrabmar" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" value="08:00:00"
+                                                                type="time" name="" id="horainiciomar" onchange="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" 
+                                                                onclick="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" value="08:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" value="17:00:00"
+                                                                type="time" name="" id="horafinmar" onchange="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" 
+                                                                onclick="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')"value="17:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="desc1" value="10:00:00"
+                                                                type="time" name="" id="desc1" onchange="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" 
+                                                                onclick="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" value="10:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" value="13:00:00"
+                                                                type="time" name="" id="alminiciomar" onchange="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" 
+                                                                onclick="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" value="13:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" value="14:00:00"
+                                                                type="time" name="" id="almfinmar" onchange="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" 
+                                                                onclick="calcular('horainiciomar','horafinmar','alminiciomar','almfinmar','htrabmar')" value="14:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
@@ -182,28 +175,32 @@
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
                                                                 style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                id="htrabmie" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" value="08:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')" 
+                                                                onclick="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')"
+                                                                type="time" name="" id="horainiciomie" value="08:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" value="17:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')" 
+                                                                onclick="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')"
+                                                                type="time" name="" id="horafinmie" value="17:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
+                                                                 font-weight:bold; text-align:end; color:teal;" 
                                                                 type="time" name="" id="desc1" value="10:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" value="13:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')" 
+                                                                onclick="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')"
+                                                                type="time" name="" id="alminiciomie" value="13:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" value="14:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')" 
+                                                                onclick="calcular('horainiciomie','horafinmie','alminiciomie','almfinmie','htrabmie')"
+                                                                type="time" name="" id="almfinmie" value="14:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
@@ -216,28 +213,32 @@
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
                                                                 style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                id="htrabjue" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" value="08:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                onclick="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                type="time" name="" id="horainiciojue" value="08:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" value="17:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                onclick="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                type="time" name="" id="horafinjue" value="17:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
                                                                 type="time" name="" id="desc1" value="10:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" value="13:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                onclick="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                type="time" name="" id="alminiciojue" value="13:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" value="14:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                onclick="calcular('horainiciojue','horafinjue','alminiciojue','almfinjue','htrabjue')" 
+                                                                type="time" name="" id="almfinjue" value="14:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
@@ -249,28 +250,32 @@
                                                             Viernes</th>
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
-                                                                style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                style="font-size: 1.5rem;" type="text" name="" 
+                                                                id="htrabvie" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" value="08:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')" 
+                                                                onclick="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')"
+                                                                type="time" name="" id="horainiciovie" value="08:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" value="17:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')" 
+                                                                onclick="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')"
+                                                                type="time" name="" id="horafinvie" value="17:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
                                                                 type="time" name="" id="desc1" value="10:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" value="13:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')" 
+                                                                onclick="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')"
+                                                                type="time" name="" id="alminiciovie" value="13:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" value="14:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')" 
+                                                                onclick="calcular('horainiciovie','horafinvie','alminiciovie','almfinvie','htrabvie')"
+                                                                type="time" name="" id="almfinvie" value="14:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
@@ -283,27 +288,31 @@
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
                                                                 style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                id="htrabsab" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" value="08:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                onclick="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                type="time" name="" id="horainiciosab" value="08:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" value="17:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                onclick="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                type="time" name="" id="horafinsab" value="17:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
+                                                                 font-weight:bold; text-align:end; color:teal;" 
                                                                 type="time" name="" id="desc1" value="10:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" value="13:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                onclick="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                type="time" name="" id="alminiciosab" value="13:00:00"
                                                                 required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" value="14:00:00"
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                onclick="calcular('horainiciosab','horafinsab','alminiciosab','almfinsab','htrabsab')"
+                                                                type="time" name="" id="almfinsab" value="14:00:00"
                                                                 required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
@@ -316,27 +325,43 @@
                                                         <td><input
                                                                 class="form-control text-info text-center font-weight-bold col w-100"
                                                                 style="font-size: 1.5rem;" type="text" name=""
-                                                                id="htrab" disabled></td>
+                                                                id="htrabdom" disabled></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horainicio" required></td>
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                onclick="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                type="time" name="" id="horainiciodom" required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="horafin" required></td>
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                onclick="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                type="time" name="" id="horafindom" required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
                                                                 type="time" name="" id="desc1" required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="alminicio" required>
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                onclick="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                type="time" name="" id="alminiciodom" required>
                                                         </td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
-                                                                 font-weight:bold; text-align:end; color:teal;"
-                                                                type="time" name="" id="almfin" required></td>
+                                                                 font-weight:bold; text-align:end; color:teal;" onchange="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                onclick="calcular('horainiciodom','horafindom','alminiciodom','almfindom','htrabdom')"
+                                                                type="time" name="" id="almfindom" required></td>
                                                         <td><input style="border-radius:30px; border:1px solid #2980B9; box-shadow:0px 0px 5px #4DD0E1;
                                                                  font-weight:bold; text-align:end; color:teal;"
                                                                 type="time" name="" id="desc2" required></td>
                                                     </tr>
+                                                     <script>
+                                                    function calcular(id1, id2, id3, id4, id5) {
+
+                                                        
+                                                        let a = parseFloat(document.getElementById(id1).value) || 0;
+                                                        let b = parseFloat(document.getElementById(id2).value) || 0;
+                                                        let c = parseFloat(document.getElementById(id3).value) || 0;
+                                                        let d= parseFloat(document.getElementById(id4).value) || 0;
+                                                        let total = document.getElementById(id5).value = (b - a) - (
+                                                            d - c) + "-horas";
+                                                    }
+                                                    </script>
                                                 </tbody>
                                             </table>
                                         </div>
